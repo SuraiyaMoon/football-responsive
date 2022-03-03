@@ -2,7 +2,9 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+/* ----------------
+banner section style
+------------------  */
 .banner{
     background-color: #2D25A0;;
     display: flex;
@@ -23,20 +25,24 @@ body{
 }
 .ball-btn{
     color: white;
+    font-size: 20px;
     border: 0;
     background-color: #E02C6D;
     padding: 10px 15px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+.fa-solid{
+    margin-left: 10px;
+}
 
 /* -------------
 player section style
  ------------- */
- .center{
-     display: flex;
-     justify-content: center;
- }
+ .center-alignment{
+    display: flex;
+    justify-content: center;
+}
  .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -57,15 +63,39 @@ player section style
      width: 100%;
  }
 
+ 
+/*--------------
+ footer style 
+------------- */
+
+ footer img{
+    width: 483px;
+    height: 110px;
+   }
+   .social-icon{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+   }
+   .fab, .fas{
+       color:  #969BAB;;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
 
 
 
+/*------------------------------- media query-----------------------------  */
 
-
-
-
-/* media query  */
-/* mobile phone  */
+/*-----------
+ mobile phone
+ ----------  */
 @media only screen and (max-width:688px) {
    .banner{
        grid-template-columns: repeat(1,1fr);
@@ -75,6 +105,9 @@ player section style
    }
     
 }
+/* --------------
+media query for tablet
+------------  */
 @media only screen and (min-width:689px) and (max-width:992px) {
     .players{
         grid-template-columns: repeat(2,1fr);
