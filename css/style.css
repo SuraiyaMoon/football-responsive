@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner{
+    background-color: #2D25A0;;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px;
+}
+.heading{
+    font-size: 2em;
+    color: white;
+}
+ img{
+    overflow: hidden;
+}
+.ball-btn{
+    color: white;
+    border: 0;
+    background-color: #E02C6D;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* -------------
+player section style
+ ------------- */
+ .center{
+     display: flex;
+     justify-content: center;
+ }
+ .players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    padding: 35px;
+   }
+   .player{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    max-width: 330px;
+
+   }
+ .player img{
+     width: 100%;
+ }
+
+
+
+
+
+
+
+
+/* media query  */
+/* mobile phone  */
+@media only screen and (max-width:688px) {
+   .banner{
+       grid-template-columns: repeat(1,1fr);
+   } 
+   .players{
+       grid-template-columns: repeat(1,1fr);
+   }
+    
+}
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
