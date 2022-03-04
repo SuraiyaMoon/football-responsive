@@ -20,6 +20,21 @@ banner section style
     font-size: 2em;
     color: white;
 }
+.ball-btn{
+    color: white;
+    font-size: 20px;
+    border: 0;
+    background-color: #E02C6D;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.fa-solid{
+    margin-left: 10px;
+}
+/*-----------------------
+ transform and transition start
+ ------------------  */
 h1:hover{
     transform: rotate(-360deg);
     transition-property: transform;
@@ -33,18 +48,10 @@ h1:hover{
   transition-duration: 4s;
   transition-timing-function: linear;
 }
-.ball-btn{
-    color: white;
-    font-size: 20px;
-    border: 0;
-    background-color: #E02C6D;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-.fa-solid{
-    margin-left: 10px;
-}
+/*-----------------------
+ transform and transition end
+ ------------------  */
+
 
 /* -------------
 player section style
