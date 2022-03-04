@@ -122,6 +122,9 @@ player section style
     padding: 10px;
     color: white;
 }
+.right-alignment{
+    text-align: right;
+}
  
 /*--------------
  footer style 
