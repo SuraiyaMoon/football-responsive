@@ -2,6 +2,9 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+img{
+    overflow: hidden;
+}
 /* ----------------
 banner section style
 ------------------  */
