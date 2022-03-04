@@ -61,7 +61,7 @@ player section style
     justify-content: center;
     align-items: center;
 }
- .players , .get-involved-container{
+ .players , .get-involved-container,.newses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
@@ -101,6 +101,27 @@ player section style
 .fa-circle-chevron-right{
     color: black;
 }
+
+/* girls football part style */
+.tittle{
+    display: flex;
+    align-items: center;
+    
+}
+.news-paragraph,.tittle{
+    padding-left: 35px;
+
+}
+.news img{
+    height: 330px;
+}
+.news{
+    background-color: rgb(1, 1, 32);
+}
+.news-text{
+    padding: 10px;
+    color: white;
+}
  
 /*--------------
  footer style 
@@ -135,25 +156,19 @@ player section style
  mobile phone
  ----------  */
 @media only screen and (max-width:688px) {
-   .banner{
+   .banner,.players,.get-involved-container,.newses{
        grid-template-columns: repeat(1,1fr);
    } 
-   .players{
-       grid-template-columns: repeat(1,1fr);
-   }
-   .get-involved-container{
-       grid-template-columns: repeat(1,1fr);
-   }
+   
     
 }
 /* --------------
 media query for tablet
 ------------  */
 @media only screen and (min-width:689px) and (max-width:992px) {
-    .players{
+    .players,.get-involved-container,.newses{
         grid-template-columns: repeat(2,1fr);
     }
-    .get-involved-container{
-        grid-template-columns: repeat(2,1fr);
-    }
+    
+   
 }
