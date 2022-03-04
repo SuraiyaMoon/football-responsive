@@ -20,11 +20,17 @@ banner section style
     font-size: 2em;
     color: white;
 }
-.fa-arrow-right:hover{
+h1:hover{
+    transform: rotate(-360deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function:cubic-bezier(-1, 0, 0, 1);
+}
+.fa-arrow-right:hover,.fa-circle-chevron-right:hover{
     font-size: 1.5em;
     transform: rotate(360deg);
     transition-property: transform;
-  transition-duration: 2s;
+  transition-duration: 4s;
   transition-timing-function: linear;
 }
 .ball-btn{
